@@ -12,6 +12,6 @@ const sumFibs = (num) => {
   }
 
   return rs;
-}
+};
 
 module.exports = sumFibs;
