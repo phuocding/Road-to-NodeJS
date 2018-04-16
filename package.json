@@ -1,0 +1,43 @@
+{
+  "name": "Road-to-NodeJS",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/phuocding/Road-to-NodeJS.git",
+  "author": "phuocding <phuocding@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "jest": "^22.4.3",
+    "lint-staged": "^7.0.4",
+    "mocha": "^5.1.0",
+    "prettier": "^1.12.0"
+  },
+  "dependencies": {
+    "husky": "^0.14.3"
+  },
+  "scripts": {
+    "eslint": "eslint --fix",
+    "format": "prettier",
+    "test": "mocha test",
+    "precommit": "lint-staged",
+    "prepush": "test"
+  },
+  "lint-staged": {
+    "./app/*.js": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
+}
