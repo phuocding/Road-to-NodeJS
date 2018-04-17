@@ -29,7 +29,7 @@ và web service sẽ phân tích và trả về kiểu dữ liệu mà người 
   - Hiển thị cấu trúc thư mục nhu urls
   - Truyền tải JSON hoặc XML
 ## `Có các loại RESTFull method nào ?`
-**4 method chính: **
+**4 method chính:**
 - POST
 - GET
 - PUT
