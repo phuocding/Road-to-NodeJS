@@ -1,12 +1,10 @@
-const convertHTML = str => {
-  return String(str)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&apos;");
-};
+const convertHTML = str => String(str)
+  .replace(/&/g, '&amp;')
+  .replace(/</g, '&lt;')
+  .replace(/>/g, '&gt;')
+  .replace(/"/g, '&quot;')
+  .replace(/'/g, '&apos;');
 
-console.log(convertHTML("<>"));
+console.log(convertHTML('<>'));
 
-module.exports = convertHTML;
+export default convertHTML;

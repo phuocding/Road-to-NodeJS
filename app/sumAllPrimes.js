@@ -19,4 +19,4 @@ const sumPrimes = (num) => {
   return sum;
 };
 
-module.exports = sumPrimes;
+export default sumPrimes;

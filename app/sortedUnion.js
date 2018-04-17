@@ -1,5 +1,3 @@
-const uniteUnique = (...arr) => {
-  return [...new Set([].concat(...arr))];
-};
+const uniteUnique = (...arr) => [...new Set([].concat(...arr))];
 
-module.exports = uniteUnique;
+export default uniteUnique;

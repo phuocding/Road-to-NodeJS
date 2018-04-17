@@ -4,4 +4,4 @@ const findElement = (arr, func) => {
   return num[0];
 };
 
-module.exports = findElement;
+export default findElement;

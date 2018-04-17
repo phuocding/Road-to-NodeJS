@@ -8,4 +8,4 @@ const dropElements = (arr, func) => {
   return newArr;
 };
 
-module.exports = dropElements;
+export default dropElements;

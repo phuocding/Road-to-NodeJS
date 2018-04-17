@@ -7,4 +7,4 @@ const booWho = (bool) => {
   return false;
 };
 
-module.exports = booWho;
+export default booWho;

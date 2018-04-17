@@ -22,7 +22,7 @@
   "scripts": {
     "eslint": "eslint --fix",
     "format": "prettier",
-    "test": "mocha test",
+    "test": "mocha test --require babel-core/register",
     "precommit": "lint-staged",
     "prepush": "test"
   },
