@@ -24,7 +24,8 @@
     "format": "prettier",
     "test": "mocha test --require babel-core/register",
     "precommit": "lint-staged",
-    "prepush": "test"
+    "prepush": "test",
+    "b":"babel-node"
   },
   "lint-staged": {
     "./app/*.js": [
