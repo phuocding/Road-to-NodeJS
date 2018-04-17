@@ -51,6 +51,7 @@ app.listen(3000, () => console.log('Fsoft is running on port 3000'));
 ```app.METHOD(PATH, HANDLER)```
   - **Route method:** truyền tải http method request ví dụ như hàm get() ở trên của một instance(app) của lớp express
   - **Route path:** là đường dẫn trên server, route paths có thể là strings, string patterns, hoặc Regex.
+  
   ```Javascript
   app.get('/random.text', function (req, res) {
   res.send('random.text')
@@ -65,17 +66,22 @@ app.get('/users/*', function(req, res) {
 //Regex
 app.get(/.*fly$/, function (req, res) {
   res.send('/.*fly$/')
-})// đường dẫn nào kết thúc là fly thì được
+});
+// đường dẫn nào kết thúc là fly thì được
   ```
+  
   - **Route Handler:** là hàm được thực thi khi truy cập đến đường dẫn đó.
+  
   - **Route Param:** là tên trên đường dẫn và có value tương ứng, thuộc về đối tương req có thuộc tính params(req.params.user), ví dụ:
-  ```user/:user tương ứng là user/phuocnd3```
+  `user/:user tương ứng là user/phuocnd3`
+  
 ## `Template engine là gì ?, trình bày cách để tạo template trong express`
 > *Là một công cụ để thay thế biến thành giá trị trong template file và chuyển đổi thành HTML lúc runtime rồi gửi tới client. Đây là cách tạo HTML page dễ dàng hơn.*
 **Cách tạo template trong express**
 * Cần chọn engine cần cho express
 * tạo file có đuôi '.' + 'tên engine', một số engine như: jade, ejs, pug hoặc có thể tự dev engine của chính bạn.
 * xem ví dụ demo ở repository [own-template-engine](#https://github.com/phuocding/own-template-engine).
+
 ## `Middleware là gì ?, Nếu các chức năng của middleware`
 
 ## `Nêu tác dụng của phương thức use, all, next()`
